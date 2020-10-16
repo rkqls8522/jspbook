@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE>GET 과 POST 테스트</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+<H1>도서 구매 정보 입력</H1>
+<H4>각 사항들에 대하여 입력해 주시기 바랍니다.</H4>
+<P>
+<HR>
+<FORM METHOD="POST" ACTION="/jspbook/QueryServletPost">
+이름 : <INPUT TYPE="TEXT" NAME="buyername"><BR>
+주소 : <INPUT TYPE="TEXT" NAME="buyeraddr" SIZE="30"><BR>
+<STRONG>구매 도서명 :</STRONG><BR>
+<INPUT TYPE="CHECKBOX" NAME="buyeritem" 
+VALUE="Java Programming">Java Programming<BR>
+<INPUT TYPE="CHECKBOX" NAME="buyeritem" 
+VALUE="Servlet and JSP 프로그래밍">Servlet and JSP 프로그래밍<BR>
+<INPUT TYPE="CHECKBOX" NAME="buyeritem" VALUE="EJB">EJB<BR>
+<INPUT TYPE="CHECKBOX" NAME="buyeritem" VALUE="JDBC Programming">JDBC Programming<BR>
+<P><INPUT TYPE="SUBMIT" VALUE="주문">
+<INPUT TYPE="RESET" VALUE="다시 입력"></P>
+</FORM>
+</BODY>
+</HTML>
